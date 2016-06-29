@@ -1,13 +1,14 @@
 var Backbone = require('backbone');
 
 var Message = Backbone.Model.extend({
-
-})
+ idAttribute: '_id'
+});
 
 var MessageCollection = Backbone.Collection.extend({
   model: Message,
-  url: 'http://tiny-lasagna-server.herokuapp.com/collections/messages '
-})
+  url: 'http://tiny-lasagna-server.herokuapp.com/collections/messages ',
+  comparator: 'createdAt'
+});
 
 module.exports = {
   'Message': Message,
