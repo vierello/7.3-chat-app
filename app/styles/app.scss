@@ -15,3 +15,74 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 img {
   max-width: 100%;
 }
+
+header {
+  height: 100px;
+  line-height: 100px;
+  background-color: #18232A;
+}
+
+.chat-room {
+  height: 90vh
+}
+
+.page-title {
+  margin: 0;
+  color: white;
+  vertical-align: middle;
+  font-size: 48px;
+  line-height: 100px;
+}
+
+.user-label {
+  color: white;
+}
+
+.user-form {
+  float: right;
+}
+
+#confirm,
+#username {
+  margin-left: 10px;
+}
+
+#username{
+  height: 30px;
+}
+
+.room-list {
+  border: 1px solid #18232A;
+  height: 87vh;
+  h2 {
+    padding-left: 10px;
+  }
+}
+
+.post-list {
+  height: 80vh;
+  border: 1px solid #18232A;
+  overflow: auto;
+}
+
+.message-form {
+  height: 60px;
+}
+
+#chat-post {
+  margin-top: 10px;
+  width: 85%;
+}
+
+#chat-post,
+#post-submit {
+  display: inline;
+  vertical-align: middle;
+}
+
+#post-submit {
+  border-radius: 0px;
+  height: 63px;
+  width: 15%;
+  margin-top: 10px;
+}
