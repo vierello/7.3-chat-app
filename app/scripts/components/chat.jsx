@@ -5,10 +5,9 @@ var MessageList = React.createClass({
     var collection = this.props.collection;
     //console.log(collection);
     var messages = collection.map(function(message){
-
       return (
-        <li key={message._id}>
-          {message.get('message')}
+        <li key={message.get('_id')}>
+          {message.get('username')} - {message.get('message')} - ({message.get('createdAt')})
         </li>
       )
     });
@@ -121,7 +120,7 @@ var HeaderComponent = React.createClass({
 var AppComponent = React.createClass({
   getInitialState: function(){
     return {
-      'username': ''
+      "username": ''
     }
   },
 
