@@ -16,10 +16,6 @@ img {
   max-width: 100%;
 }
 
-#container {
-  padding: 0;
-}
-
 .wrapper {
   background-color: #233139;
   height: 100vh;
@@ -44,9 +40,6 @@ header {
   height: 100px;
   line-height: 100px;
   background-color: #233139;
-  h1 {
-    margin: 0 0 0 30px;
-  }
   span {
     color: white;
     float: right;
@@ -60,11 +53,12 @@ header {
 }
 
 .page-title {
-
+  margin: 0;
   color: white;
   vertical-align: middle;
   font-size: 48px;
   line-height: 100px;
+  padding-left: 30px;
 }
 
 .user-label {
